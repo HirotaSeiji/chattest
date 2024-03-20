@@ -1,0 +1,47 @@
+<!--  ----------------------------------------------------------------------  -->
+<!--  次の <META> 要素を、HTML の <HEAD>タグ間に追加してください。必要に応じて、charset                  -->
+<!--  パラメーターを変更して、HTML ページの文字コードを指定してください。                                    -->
+<!--  ----------------------------------------------------------------------  -->
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  次の <FORM> 要素をページに追加してください。                                              -->
+<!--  ----------------------------------------------------------------------  -->
+
+<form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00D5h0000014Gur" method="POST">
+
+<input type=hidden name="orgid" value="00D5h0000014Gur">
+<input type=hidden name="retURL" value="http://">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  注意: これらの項目は、省略可能なデバッグ用要素です。デバッグモードでテストを行う場合は、これらの行をコメント解除してください。        -->
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail" value="hirota-sxa@nec.com">      -->
+<!--  ----------------------------------------------------------------------  -->
+
+店番:<input  id="00N5h00000Jm6y3" maxlength="100" name="00N5h00000Jm6y3" size="20" type="text" /><br>
+
+店名:<input  id="00N5h00000Jm6y8" maxlength="255" name="00N5h00000Jm6y8" size="20" type="text" /><br>
+
+依頼者名:<input  id="00N5h00000Jm6yD" maxlength="255" name="00N5h00000Jm6yD" size="20" type="text" /><br>
+
+機器種別:<select  id="00N5h00000Jm6yI" name="00N5h00000Jm6yI" title="機器種別"><option value="">--なし--</option><option value="POS">POS</option>
+<option value="エッジ">エッジ</option>
+<option value="プリンタ">プリンタ</option>
+<option value="iPad">iPad</option>
+<option value="スマホ">スマホ</option>
+</select><br>
+
+号機:<select  id="00N5h00000Jm6ym" name="00N5h00000Jm6ym" title="号機"><option value="">--なし--</option><option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+</select><br>
+
+症状:<textarea  id="00N5h00000Jm6yr" name="00N5h00000Jm6yr" type="text" wrap="soft"></textarea><br>
+
+<input type="submit" name="submit">
+
+</form>
