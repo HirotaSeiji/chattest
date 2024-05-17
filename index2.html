@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+</head>
+<body>
+  <h1>チャットテスト</h1>
+<style type='text/css'>
+	.embeddedServiceHelpButton .helpButton .uiButton {
+		//background-color: #005290;
+		background-color: #008833;
+		font-family: "Arial", sans-serif;
+	}
+	.embeddedServiceHelpButton .helpButton .uiButton:focus {
+		outline: 1px solid #005290;
+	}
+</style>
+
+<script type='text/javascript' src='https://url.de.m.mimecastprotect.com/s/oE0XCBrV2vSAZr29KT6SYSP?domain=service.force.com'></script>
+<script type='text/javascript'>
+	var initESW = function(gslbBaseURL) {
+		embedded_svc.settings.displayHelpButton = true; //または false
+		embedded_svc.settings.language = 'ja'; //たとえば、「en」または「en-US」を入力します
+
+		embedded_svc.settings.defaultMinimizedText = '何でも聞いてね'; //(エキスパートとチャットにデフォルト設定)
+		//embedded_svc.settings.disabledMinimizedText = '...'; //(エージェントがオフラインにデフォルト設定)
+
+		//embedded_svc.settings.loadingText = ''; //(読み込み中にデフォルト設定)
+		embedded_svc.settings.storageDomain = 'hirotaseiji.github.io'; //(リリースのドメインを設定して、訪問者がチャットセッション中にサブドメインを移動できるようにします)
+embedded_svc.settings.chatbotAvatarImgURL='./IMG_0110.png';
+embedded_svc.settings.smallCompanyLogoImgURL='./IMG_0110.png';
+
+		// チャット の設定
+		//embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
+			// Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
+			// Returns a valid button ID.
+		//};
+		//embedded_svc.settings.prepopulatedPrechatFields = {}; //事前チャットフォームの項目の自動入力を設定
+		//embedded_svc.settings.fallbackRouting = []; //ボタン ID、ユーザー ID、または userId_buttonId の配列
+		//embedded_svc.settings.offlineSupportMinimizedText = '...'; //(デフォルトは [お問い合わせ])
+
+		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
+		embedded_svc.settings.entryFeature = 'LiveAgent';
+
+		embedded_svc.init(
+			'https://url.de.m.mimecastprotect.com/s/o31kCDqX2xCM6zGKAhAksT9?domain=necsolutioninnovators3-dev-ed.my.salesforce.com',
+			'https://url.de.m.mimecastprotect.com/s/WfeoCEqY2yCnA2XJxsP2DwT?domain=necsolutioninnovators3-dev-ed.my.site.com',
+			gslbBaseURL,
+			'00D5h0000014Gur',
+			'Sample_Einstein_Bot_Queue2',
+			{
+				baseLiveAgentContentURL: 'https://url.de.m.mimecastprotect.com/s/wpFnCGR12ACqyRXp4skdACw?domain=c.la1-c1-it4.salesforceliveagent.com',
+				deploymentId: '572J2000000TN1M',
+				buttonId: '573J2000000TN1M',
+				baseLiveAgentURL: 'https://url.de.m.mimecastprotect.com/s/r8JSCJ8421Sy4vMmwTOnVI8?domain=d.la1-c1-it4.salesforceliveagent.com',
+				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04IJ2000000TN1PMAW_18f84f42ea3',
+				isOfflineSupportEnabled: false
+			}
+		);
+	};
+
+	if (!window.embedded_svc) {
+		var s = document.createElement('script');
+		s.setAttribute('src', 'https://url.de.m.mimecastprotect.com/s/r4iwCK8g2GS9ANpvWso7SJR?domain=necsolutioninnovators3-dev-ed.my.salesforce.com');
+		s.onload = function() {
+			initESW(null);
+		};
+		document.body.appendChild(s);
+	} else {
+		initESW('https://url.de.m.mimecastprotect.com/s/Wz2yCLZj2GtXor8p9tKfIj-?domain=service.force.com');
+	}
+</script>
+
+</body>
+</html>
